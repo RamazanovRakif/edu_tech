@@ -1,0 +1,35 @@
+.dropdown {
+  position: relative;
+}
+
+.dropdown_items {
+  position: absolute;
+  top: 40px;
+  padding: 10px 15px;
+  background-color: #fff;
+  border-radius: 8px;
+  border: 1px solid #46a758;
+  color: #000;
+  margin-left: -10px;
+}
+
+.default_item{
+    cursor: pointer;
+}
+
+.dropdown_item {
+  width: auto;
+  cursor: pointer;
+}
+
+.active{
+    color: red;
+}
+
+.dropdown_item:not(:last-child) {
+  border-bottom: 1px solid #46a758;
+}
+
+.dropdown_item:nth-child(2) {
+  margin: 10px 0;
+}

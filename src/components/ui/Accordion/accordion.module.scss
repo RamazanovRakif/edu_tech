@@ -1,0 +1,25 @@
+@import '../../../styles/mixins';
+
+.accordion {
+  padding: 20px;
+  border: 1px solid #f4f7fe;
+  flex-grow: 1;
+
+  &_header {
+    border-bottom: 1px solid #a3b1b9;
+    padding-bottom: 12px;
+    font-size: 18px;
+    line-height: 36px;
+  }
+
+  &_content {
+    padding-right: 25px;
+  }
+}
+
+@include media('mobile') {
+  .accordion {
+    padding: 2px;
+    width: auto;
+  }
+}

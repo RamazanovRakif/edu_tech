@@ -1,0 +1,51 @@
+.review_card {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px 30px;
+  border-radius: 24px;
+  margin: 10px;
+  text-align: center;
+  transition: box-shadow 0.2s;
+
+  &:hover {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  }
+
+  img {
+    border-radius: 50%;
+  }
+
+  .review_card_text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #868686;
+    margin: 16px 0;
+  }
+
+  .review_card_shape {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #65ba75;
+  }
+
+  .review_card_personal {
+    &_name {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    &_job {
+      font-weight: 300;
+      font-size: 12px;
+      line-height: 18px;
+      color: #868686;
+    }
+  }
+}

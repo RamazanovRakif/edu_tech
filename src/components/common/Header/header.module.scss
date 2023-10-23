@@ -1,0 +1,76 @@
+@import "../../../styles/function";
+@import "../../../styles/mixins";
+
+.header {
+  padding: px-to-rem(12px) 0;
+  background-color: #fff;
+  transition: box-shadow 0.5s, position 0.5s;
+  z-index: 1000;
+}
+
+.mobile_menu {
+  display: none;
+}
+
+.sticky {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  position: fixed;
+  background-color: #fbfefb;
+  top: 0;
+  width: 100%;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+
+  &_item {
+    &:not(:last-child) {
+      margin-right: 24px;
+    }
+
+    a {
+      color: #171717;
+      font-weight: 500;
+      font-size: px-to-rem(16px);
+      line-height: px-to-rem(18.75px);
+      transition: all 0.3s;
+
+      &:hover {
+        color: green;
+      }
+    }
+  }
+}
+
+.menu_right {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.selected a {
+  color: green;
+}
+
+@include media("mobile") {
+  .header {
+    position: relative;
+  }
+  .mobile_menu {
+    display: block;
+  }
+
+  .menu {
+    flex-direction: column;
+    position: absolute;
+    top: 40px;
+    right: 10px;
+    background-color: red;
+  }
+}

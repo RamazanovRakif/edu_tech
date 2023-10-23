@@ -1,0 +1,29 @@
+@import "../../../styles/function";
+
+.btn {
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+  padding: px-to-rem(12px) px-to-rem(24px);
+  border-radius: px-to-rem(10px);
+  border: none;
+  font-size: 16px;
+  transition: box-shadow 0.3s linear;
+
+  &:hover {
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+      rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  }
+}
+
+.primary {
+  background-color: #46a758;
+  color: #fcfcfc;
+}
+
+.light {
+  background-color: #fbfefc;
+  color: #171717;
+}

@@ -1,0 +1,38 @@
+@import '../../../styles/function';
+
+.banner_container {
+  background: linear-gradient(
+    86.09deg,
+    #087037 16.61%,
+    #0d6b3b 38.4%,
+    #0d251b 80%
+  );
+  border-radius: 10px;
+  padding: px-to-rem(24px) px-to-rem(20px);
+}
+
+.banner {
+  max-width: 1220px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: px-to-rem(24px) px-to-rem(20px);
+
+  &_content {
+    max-width: 512px;
+    &_title {
+      font-weight: 500;
+      font-size: px-to-rem(24px);
+      line-height: px-to-rem(28px);
+      color: #fcfcfc;
+    }
+
+    &_description {
+      font-weight: 400;
+      font-size: px-to-rem(16px);
+      line-height: px-to-rem(28px);
+      margin: px-to-rem(20px) 0 px-to-rem(40px) 0;
+      color: #fcfcfc;
+    }
+  }
+}

@@ -1,0 +1,12 @@
+@import "../../../styles/mixins";
+
+.accordion_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 36px;
+
+  @include media("mobile") {
+    flex-direction: column;
+  }
+}
