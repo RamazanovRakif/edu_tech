@@ -19,7 +19,7 @@ const Header = () => {
   const [open, setOpen] = useState(false);
   const [size] = useWindowSize();
   const [isSticky, setIsSticky] = useState(false);
-  const [activeMenuId, setActiveMenuId] = useState<number | string>("");
+  const [activeMenuId, setActiveMenuId] = useState<number | string>(1);
 
   useEffect(() => {
     const handleScroll = () => {

@@ -2,7 +2,7 @@
 
 .course_content {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 0.7fr 1fr;
   align-items: flex-start;
 
   .course_content_image {

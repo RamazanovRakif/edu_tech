@@ -48,7 +48,7 @@ const Accordion: React.FC = () => {
     {
       key: "5",
       label: "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
-      children: <div>{text}</div>,
+      children: <div>{text2}</div>,
     },
   ];
 

@@ -96,7 +96,9 @@ const Language: React.FC = () => {
       <ul>
         <li className={styles.default_item} onClick={onClickHandler}>
           {selectedOption?.name}
-          <FiChevronDown />
+          <span className={styles.down_icon}>
+            <FiChevronDown />
+          </span>
           {!!toggle && (
             <ul className={styles.dropdown_items}>
               {!!filteredOptions.length &&

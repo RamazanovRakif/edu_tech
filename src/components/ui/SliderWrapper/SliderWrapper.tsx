@@ -30,7 +30,7 @@ const SliderWrapper: FC<ISliderWrapperProps> = ({ className, children }) => {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
-    autoplay: true,
+    // autoplay: true,
     autoplaySpeed: 3000,
     ref: sliderRef,
     responsive: [
@@ -69,6 +69,7 @@ const SliderWrapper: FC<ISliderWrapperProps> = ({ className, children }) => {
       <div className="custom_arrow">
         <Button
           className="custom_arrow_prev"
+          type="text"
           onClick={() => sliderRef.current?.slickPrev()}
         >
           <ArrowLeftOutlined />
@@ -76,6 +77,7 @@ const SliderWrapper: FC<ISliderWrapperProps> = ({ className, children }) => {
 
         <Button
           className="custom_arrow_next"
+          type="text"
           onClick={() => sliderRef.current?.slickNext()}
         >
           <ArrowRightOutlined />

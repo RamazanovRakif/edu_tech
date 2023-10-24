@@ -1,4 +1,4 @@
-@import '../../../styles/mixins';
+@import "../../../styles/mixins";
 
 .accordion {
   padding: 20px;
@@ -8,16 +8,19 @@
   &_header {
     border-bottom: 1px solid #a3b1b9;
     padding-bottom: 12px;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 36px;
+    font-weight: 600;
   }
 
   &_content {
     padding-right: 25px;
+    padding-bottom: 10px;
+    font-size: 16px;
   }
 }
 
-@include media('mobile') {
+@include media("mobile") {
   .accordion {
     padding: 2px;
     width: auto;

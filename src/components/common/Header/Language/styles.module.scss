@@ -13,17 +13,21 @@
   margin-left: -10px;
 }
 
-.default_item{
-    cursor: pointer;
+.default_item {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  margin-right: 15px;
 }
 
+.down_icon {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+}
 .dropdown_item {
   width: auto;
   cursor: pointer;
-}
-
-.active{
-    color: red;
 }
 
 .dropdown_item:not(:last-child) {

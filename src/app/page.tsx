@@ -8,12 +8,12 @@ import CourseCards from "@/components/common/CourseCards/CourseCards";
 export default function Home() {
   return (
     <>
+      <CourseCards />
       <AboutInstructor />
       <FeatureCards />
       <Banner />
       <StudentsReview />
       <Faq />
-      <CourseCards />
     </>
   );
 }
