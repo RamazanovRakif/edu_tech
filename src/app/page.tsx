@@ -13,7 +13,7 @@ export default function Home() {
       <Banner />
       <StudentsReview />
       <Faq />
-      {/* <CourseCards/> */}
+      <CourseCards />
     </>
   );
 }
