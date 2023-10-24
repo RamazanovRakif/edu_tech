@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./course-cards.module.scss";
 import Image from "next/image";
 
-const CardItem = ({ item }) => {
+const CardItem = ({ item }: any) => {
   console.log({ item });
   return (
     <div className={styles.card} key={item?.id}>
