@@ -1,4 +1,5 @@
-@import '../../../styles/function';
+@import "../../../styles/function";
+@import "../../../styles/mixins";
 
 .banner_container {
   background: linear-gradient(
@@ -7,6 +8,7 @@
     #0d6b3b 38.4%,
     #0d251b 80%
   );
+
   border-radius: 10px;
   padding: px-to-rem(24px) px-to-rem(20px);
 }
@@ -34,5 +36,11 @@
       margin: px-to-rem(20px) 0 px-to-rem(40px) 0;
       color: #fcfcfc;
     }
+  }
+}
+
+@include media("mobile") {
+  .banner_image {
+    display: none;
   }
 }

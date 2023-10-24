@@ -8,6 +8,7 @@ interface ISectionTitleProps {
   link?: string;
   moreBtn?: string;
   align?: "start" | "center" | "end";
+  btnType: "primary" | "secondary" | "light";
 }
 
 const SectionTitle: FC<ISectionTitleProps> = ({
@@ -15,6 +16,7 @@ const SectionTitle: FC<ISectionTitleProps> = ({
   link,
   moreBtn,
   align,
+  btnType,
 }) => (
   <div className={`section ${styles.section_row}`}>
     {!!title && (
@@ -24,7 +26,7 @@ const SectionTitle: FC<ISectionTitleProps> = ({
     )}
     {!!moreBtn && (
       <div className={styles.section_title_link}>
-        <Button href={link} type="light">
+        <Button href={link} type={btnType}>
           {moreBtn}
         </Button>
       </div>

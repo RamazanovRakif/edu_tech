@@ -12,6 +12,11 @@ const text = `
   it can be found as a welcome guest in many households across the world.
 `;
 
+const text2 = `
+A dog is a type of domesticated animal.A dog is a type of domesticated animal.A dog is a type of domesticated animal.A dog is a type of domesticated animal.A dog is a type of domesticated animal.A dog is a type of domesticated animal.
+  Known for its loyalty and faithfulness,
+  it can be found as a welcome guest in many households across the world.
+`;
 const Accordion: React.FC = () => {
   const [activeKey, setActiveKey] = useState<string | string[]>(["1"]);
 
@@ -28,7 +33,7 @@ const Accordion: React.FC = () => {
     {
       key: "2",
       label: "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
-      children: <div>{text}</div>,
+      children: <div>{text2}</div>,
     },
     {
       key: "3",
@@ -66,7 +71,7 @@ const Accordion: React.FC = () => {
               showArrow={false}
               extra={activeKey.includes(item?.key) ? <BiMinus /> : <BiPlus />}
             >
-              <p className={styles.accordion_content}>{item.children}</p>
+              <span className={styles.accordion_content}>{item.children}</span>
             </Collapse.Panel>
           ))}
       </Collapse>

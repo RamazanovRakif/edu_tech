@@ -1,8 +1,13 @@
-import React, { useCallback, useMemo, useRef, useState } from "react";
+import React, {
+  useCallback,
+  useMemo,
+  useRef,
+  useState,
+  useEffect,
+} from "react";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
-import { FiChevronDown } from "react-icons/fi";
 
-import { useOutsideClick } from "../../../../hooks";
+import { FiChevronDown } from "react-icons/fi";
 
 import styles from "./styles.module.scss";
 
@@ -12,7 +17,7 @@ type LanguageOption = {
   code: string;
 };
 
-const Language = () => {
+const Language: React.FC = () => {
   const options: LanguageOption[] = useMemo(
     () => [
       {
@@ -50,6 +55,7 @@ const Language = () => {
     () => options.filter((item) => item.id !== selectedId),
     [options, selectedId]
   );
+
   const onClickHandler = useCallback(() => {
     setToggle((prev) => !prev);
   }, []);
@@ -72,7 +78,18 @@ const Language = () => {
     [pathname, router, searchParams]
   );
 
-  useOutsideClick(modalRef, onClickHandler);
+  useEffect(() => {
+    const handleOutsideClick = (e: MouseEvent) => {
+      if (modalRef.current && !modalRef.current.contains(e.target as Node)) {
+        setToggle(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleOutsideClick);
+    return () => {
+      document.removeEventListener("mousedown", handleOutsideClick);
+    };
+  }, []);
 
   return (
     <div className={styles.dropdown} ref={modalRef}>
@@ -85,11 +102,11 @@ const Language = () => {
               {!!filteredOptions.length &&
                 filteredOptions.map((item) => (
                   <li
-                    key={item?.id}
+                    key={item.id}
                     className={styles.dropdown_item}
-                    onClick={() => onSelectHandler(item?.code, item?.id)}
+                    onClick={() => onSelectHandler(item.code, item.id)}
                   >
-                    {item?.name}
+                    {item.name}
                   </li>
                 ))}
             </ul>

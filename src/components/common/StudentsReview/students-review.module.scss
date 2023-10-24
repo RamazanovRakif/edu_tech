@@ -10,6 +10,8 @@
   text-align: center;
   transition: box-shadow 0.2s;
 
+  // background-color: red;
+  background-color: #fcfcfc;
   &:hover {
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   }

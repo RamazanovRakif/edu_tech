@@ -7,7 +7,11 @@ const Faq = () => {
   return (
     <div className="container">
       <div className="section">
-        <SectionTitle title="Frequently Asked Questions" align="center" />
+        <SectionTitle
+          title="Frequently Asked Questions"
+          align="center"
+          btnType="light"
+        />
         <div className={styles.accordion_container}>
           <Accordion />
         </div>

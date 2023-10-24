@@ -54,7 +54,7 @@ const SliderWrapper: FC<ISliderWrapperProps> = ({ className, children }) => {
         settings: {
           arrows: true,
           dots: false,
-          slidesToShow: 1,
+          slidesToShow: 1.08,
         },
       },
     ],

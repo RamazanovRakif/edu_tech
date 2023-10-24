@@ -3,7 +3,6 @@ import Image from "next/image";
 import classNames from "classnames";
 
 import InstructorImg from "../../../assets/images/instructor.png";
-import Button from "../../ui/Button/Button";
 
 import styles from "./about-instructor.module.scss";
 
@@ -14,13 +13,7 @@ const AboutInstructor = () => {
         <h2 className="section_title">About the instructor</h2>
         <div className={styles.section_content}>
           <div className={styles.about_image}>
-            <Image
-              src={InstructorImg}
-              alt=""
-              width={660}
-              height={544}
-              objectFit="cover"
-            />
+            <Image src={InstructorImg} alt=""/>
           </div>
 
           <article className={styles.about_content}>
@@ -38,7 +31,6 @@ const AboutInstructor = () => {
               Aliquam in elementum tellus.Lorem ipsum dolor sit amet,
               consectetur adipiscing elit.
             </p>
-            <Button type="primary">More</Button>
           </article>
         </div>
       </section>
