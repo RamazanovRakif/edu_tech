@@ -106,7 +106,7 @@ const Header = () => {
                 </div>
               </div>
 
-              <div className={styles.mobile_menu}>
+              <div className={styles.mobile_menu_icon}>
                 <AiOutlineMenu />
               </div>
             </nav>

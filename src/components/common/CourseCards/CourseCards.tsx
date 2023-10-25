@@ -14,29 +14,44 @@ const CourseCards = () => {
   const data = [
     {
       id: 1,
-      title: "Get certificate",
+      title: "What is front-end",
       img: codeIcon,
-      text: "We are providing a certificate to you after completing your courseand this will help you future",
+      text: " When you open a website, menus, visual links with campaigns, colors, fonts and visual placements begin to appear in front of you. This home page you see is the work of a frontend developer",
     },
     {
       id: 2,
       img: userIcon,
-      title: "Interview preparation training",
-      text: "In this training, we will share real experiences with you, make you aware of the questions and tasks that await you, and fully prepare you for the interview.",
+      title: "Who is it for",
+      text: "Entrepreneurs, students, software developers, web designers from different sectors can join our front-end programming teams. This training is suitable for anyone who wants to learn basic skills related to creating websites and web applications.",
     },
     {
       id: 3,
       img: curriculumIcon,
-      title: "Internship programs",
-      text: "All job postings require experience. We will provide the internship program after successful graduation!",
+      title: "Curriculum",
+      text: "Our training program lasts for 5 months and each lesson is based on a 2-hour training plan, 2 times a week. Our trainer and mentor are here to fully support our students and ensure their successful learning.",
     },
     {
       id: 4,
       img: syllabusIcon,
-      title: "Mentor support",
-      text: "Our mentors are always there to facilitate  the learning process. They are accessible guides that you can easily ask questions and get answers quickly during the learning process.",
+      title: "Syllabus",
+      text: ` - Git/Github
+      </br>
+              - HTML 5 
+      </br>
+
+              - CSS 3/SASS/Bootstrap 
+      </br>
+
+              - Javascript/Typescript/ES 6+
+      </br>
+
+              - React/Redux/Redux Toolkit ,
+      </br>
+      - Next JS (bonus)
+       `,
     },
   ];
+
   return (
     <div className="container">
       <section className="section">

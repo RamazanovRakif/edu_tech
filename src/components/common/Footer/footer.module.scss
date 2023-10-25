@@ -2,8 +2,8 @@
 @import "../../../styles/function";
 
 .footer {
-  padding: 30px 0;
-  background-color: #0d251b;
+  padding: 50px 0;
+  background-color: #f3f3f3;
 
   &_content {
     @include d-flex(flex, space-between, center, _);
@@ -11,7 +11,6 @@
       flex-direction: column;
       gap: 20px;
     }
-    color: #dff3df;
 
     .footer_menu {
       @include d-flex(flex, space-between, center, 30px);
@@ -20,7 +19,7 @@
         font-size: px-to-rem(24px);
 
         a {
-          color: #fff;
+          color: #000;
         }
       }
     }

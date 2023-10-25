@@ -1,34 +1,33 @@
 import React from "react";
-import styles from "./footer.module.scss";
 import Link from "next/link";
 
-import { AiOutlineCopyrightCircle } from "react-icons/ai";
-import { BsInstagram } from "react-icons/bs";
-import { ImFacebook, ImWhatsapp, ImLinkedin } from "react-icons/im";
+import { AiFillInstagram, AiOutlineCopyrightCircle } from "react-icons/ai";
+import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
+import { RiWhatsappFill } from "react-icons/ri";
 
-
+import styles from "./footer.module.scss";
 
 const Footer = () => {
   const footerMenuData = [
     {
       id: 1,
       href: "/",
-      icon: <BsInstagram />,
+      icon: <AiFillInstagram />,
     },
     {
       id: 2,
       href: "/",
-      icon: <ImFacebook />,
+      icon: <FaFacebookF />,
     },
     {
       id: 3,
       href: "/",
-      icon: <ImLinkedin />,
+      icon: <FaLinkedinIn />,
     },
     {
       id: 4,
       href: "/",
-      icon: <ImWhatsapp />,
+      icon: <RiWhatsappFill />,
     },
   ];
   return (
