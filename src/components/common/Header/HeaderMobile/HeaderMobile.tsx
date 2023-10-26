@@ -4,7 +4,7 @@ import { Sidebar } from "../SideMenu/SideMenu";
 import { AiOutlineMenu } from "react-icons/ai";
 import styles from "./mobile-header.module.scss";
 
-const HeaderMobile: FC = ({ isSticky }) => {
+const HeaderMobile: FC = () => {
   const [open, setOpen] = useState(false);
 
   const showDrawer = () => {
@@ -14,7 +14,6 @@ const HeaderMobile: FC = ({ isSticky }) => {
   const onClose = () => {
     setOpen(false);
   };
-  console.log({ isSticky });
   return (
     <header className={styles.mobile_header}>
       <div className="container">
