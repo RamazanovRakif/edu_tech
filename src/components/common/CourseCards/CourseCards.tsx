@@ -56,11 +56,7 @@ const CourseCards = () => {
     <div className="container">
       <section className="section">
         <h3 className="section_title">Course</h3>
-        <SectionTitle
-          title="Front end development"
-          moreBtn="Apply"
-          btnType="primary"
-        />
+        <SectionTitle title="< Front end />" moreBtn="Apply" btnType="primary" />
 
         <div className={styles.course_content}>
           <div className={styles.course_content_image}>

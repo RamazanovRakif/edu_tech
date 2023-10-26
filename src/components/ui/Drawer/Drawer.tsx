@@ -1,6 +1,6 @@
 import React, { FC, ReactNode } from "react";
 import { Drawer } from "antd";
-import { AiOutlineCloseCircle } from "react-icons/ai";
+import { AiOutlineClose } from "react-icons/ai";
 
 interface ISideDrawerProps {
   title?: string;
@@ -25,7 +25,9 @@ const SideDrawer: FC<ISideDrawerProps> = ({
       onClose={onClose}
       open={open}
       key={placement}
-      closeIcon={<AiOutlineCloseCircle />}
+      closeIcon={<AiOutlineClose />}
+      maskClosable
+
     >
       {children}
     </Drawer>

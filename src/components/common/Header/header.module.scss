@@ -15,9 +15,9 @@
 
 .sticky {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  position: fixed;
+  position: sticky;
   background-color: #fbfefb;
-  top: 0;
+  top: 0px;
   width: 100%;
   transition: background-color 0.3s, box-shadow 0.3s, position 0.3s; /* Add transition */
 }

@@ -3,11 +3,8 @@ import Image from "next/image";
 import React from "react";
 import reviewImg from "../../../assets/images/instructor.png";
 import styles from "./students-review.module.scss";
-const StudentsReview = () => {
-  // const renderCard = (data: { id: number; title: string }) => {
-  //     return <Card key={data.id} title={data.title} />;
-  //   };
 
+const StudentsReview = () => {
   const ReviewCard = (card: any) => {
     return (
       <>
@@ -65,7 +62,7 @@ const StudentsReview = () => {
     },
   ];
   return (
-    <div className="container">
+    <div className="container" style={{ overflowX: "hidden" }}>
       <section className="section">
         <h2 className="section_title">Students review</h2>
         <SliderWrapper>
